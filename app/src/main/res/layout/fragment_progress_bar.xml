@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ic_storage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/tv_storage_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ic_storage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#29B6F6"/>
+        <TextView
+            android:id="@+id/tv_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_storage_free"
+            android:layout_centerHorizontal="true"
+            android:textColor="#29B6F6"/>
+        <ProgressBar
+            style="?android:progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/ic_internal_storage_background"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:progress="100"
+            />
+        <ProgressBar
+            android:id="@+id/pb_storage"
+            style="?android:progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/ic_internal_storage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:progress="50"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
